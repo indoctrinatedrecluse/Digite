@@ -12,6 +12,7 @@ public class Savings extends Accounts {
 		// TODO Auto-generated constructor stub
 	}
 
+	@BusinessLogic(type="withdraw")
 	@Override
 	public void withdraw(double amount) throws BalanceException {
 		// TODO Auto-generated method stub

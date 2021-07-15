@@ -14,6 +14,7 @@ public class Current extends Accounts {
 		// TODO Auto-generated constructor stub
 	}
 
+	@BusinessLogic(type="deposit")
 	@Override
 	public void deposit(double amount) {
 		// TODO Auto-generated method stub
@@ -24,6 +25,7 @@ public class Current extends Accounts {
 		}
 	}
 
+	@BusinessLogic(type="withdraw")
 	@Override
 	public void withdraw(double amount) throws BalanceException {
 		// TODO Auto-generated method stub

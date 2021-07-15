@@ -25,6 +25,7 @@ public abstract class Accounts implements Bank{
 		return balance;
 	}
 	
+	@BusinessLogic(type="deposit")
 	public void deposit(double amount) {
 		this.balance += amount;
 		txns.add(new Transactions("DP", amount, balance));

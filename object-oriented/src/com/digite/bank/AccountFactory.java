@@ -6,6 +6,7 @@ public final class AccountFactory {
 		
 	}
 
+	@BusinessLogic(type="account_type")
 	public static Bank openAccount(String type, String holder) {
 		Bank acnt = null;
 		
