@@ -1,0 +1,41 @@
+* {
+    font: 15pt verdana;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+p, div {
+    font-size: 15pt;
+}
+
+div {
+    color: coral;
+}
+
+p {
+    color: navy;
+}
+
+p.parcls {
+    border: 5pt outset;
+    border-color: olive;
+}
+
+#divid {
+    background-color: turquoise;
+}
+
+#parid {
+    background-color: whitesmoke;
+    border: 5pt inset;
+    border-color: indianred;
+}
+
+div.divcls {
+    margin: 5pt;
+    border: 6pt outset;
+    border-color: violet;
+}

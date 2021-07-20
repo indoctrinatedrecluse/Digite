@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/searchform.js"></script>
+    <title>Search Form</title>
+</head>
+<body>
+    <h1>Intranet Employee Data</h1>
+    <form id="searchform" onsubmit="check()">
+        <label for="fname"><sub>Search By</sub></label>
+        <br>
+        <input type="radio" value="First Name" id="fname" name="criteria"><i>First Name</i>
+        <input type="radio" value="Last Name" id="lname" name="criteria"><i>Last Name</i>
+        <input type="radio" value="Title" id="title" name="criteria"><i>Title</i>
+        <input type="radio" value="Department" id="dept" name="criteria"><i>Department</i>
+        <br>
+        <label for="searchtext"><i>Text: </i></label>
+        <input type="text" id="searchtext" name="searchtext">
+        <br>
+        <input type="checkbox" id="case" name="case"><i>Match Case </i>
+        <button type="submit">Find</button>
+        <button onclick="reset()">Clear</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Form Fields</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="demo">Placeholder : </label></td>
+                <td><input id="demo" name="demo" placeholder="Enter Numbers Only" pattern="[0-9]{3,}"/></td>
+            </tr>
+            <tr>
+                <td><label for="nameauto">Autofocus : </label></td>
+                <td><input id="nameauto" name="nameauto" type="text" autofocus/></td>
+            </tr>
+            <tr>
+                <td><label for="range">Range : </label></td>
+                <td><input id="range" name="range" type="range" min="0" max="50"/></td>
+            </tr>
+            <tr>
+                <td><label for="search">Search : </label></td>
+                <td><input id="search" name="search" type="search" placeholder="Search..."/></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date : </label></td>
+                <td><input id="date" name="date" type="date" min="2010-08-04" max="2014-08-04" value=""/></td>
+            </tr>
+            <tr>
+                <td><label for="date">Week : </label></td>
+                <td><input id="date" name="date" type="week" value=""/></td>
+            </tr>
+            <tr>
+                <td><label for="date">Month : </label></td>
+                <td><input id="date" name="date" type="month" value=""/></td>
+            </tr>
+            <tr>
+                <td><label for="date">Time : </label></td>
+                <td><input id="date" name="date" type="time" value=""/></td>
+            </tr>
+            <tr>
+                <td><label for="number">Number : </label></td>
+                <td><input id="number" name="number" type="number" step="1" min="-5" max="10" value="0"/></td>
+            </tr>
+            <tr>
+                <td><label for="required">Required : </label></td>
+                <td><input id="required" name="user" type="text" pattern="[A-Z][a-z]{4,}" required/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email : </label></td>
+                <td><input id="email" name="email" type="email"/></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile : </label></td>
+                <td><input id="mobile" name="mobile" type="text" pattern="[7-9][0-9]{10}"/></td>
+            </tr>
+            <tr>
+                <td><label for="color">Color : </label></td>
+                <td><input id="color" name="color" type="color" placeholder="e.g. #bbbbbb"/></td>
+            </tr>
+            <tr>
+                <td><label for="country_name">Country : </label></td>
+                <td><input id="country_name" name="country_name" type="text" list="country"/></td>
+                <datalist id="country">
+                    <option value="Afghanistan"></option>
+                    <option value="Albania"></option>
+                    <option value="Algeria"></option>
+                    <option value="Andorra"></option>
+                    <option value="Angola"></option>
+                    <option value="Car"></option>
+                    <option value="Cat"></option>
+                    <option value="City"></option>
+                    <option value="Cup"></option>
+                    <option value="Clip"></option>
+                </datalist>
+            </tr>
+            <tr>
+                <td align="right"><button type="submit" name="submit" value="Submit">Submit</button></td>
+                <td align="left"><button type="reset" name="reset" value="Reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        label {
+            color: green;
+        }
+    </style>
+</head>
+<body bgcolor="yellow">
+    <h1 style="color: green;">Registration Form</h1>
+    <form action="/meta.html">
+        <table>
+            <tr>
+                <td><label for="username">Username :</label></td>
+                <td><input type="text" id="username" name="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password :</label></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender :</label></td>
+                <td><input type="radio" id="male" name="gender" value="M"> Male
+                <input type="radio" id="female" name="gender" value="F"> Female</td>
+            </tr>
+            <tr>
+                <td><label for="city">City :</label></td>
+                <td>
+                    <select id="city" name="city">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Hobbies :</label></td>
+                <td>
+                    <input type="checkbox" id="music" name="hobbies" value="Music"> Music
+                    <input type="checkbox" id="movies" name="hobbies" value="Movies"> Movies
+                    <input type="checkbox" id="games" name="hobbies" value="Games"> Games
+                </td>
+            </tr>
+            <tr>
+                <td><label for="about">About :</label></td>
+                <td><textarea id="about" name="about" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="Register">Register</button>
+                <td><button type="reset" value="Cancel" onClick="window.location.href=window.location.href">Cancel</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

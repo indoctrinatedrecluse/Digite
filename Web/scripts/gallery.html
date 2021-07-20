@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/gallery.js"></script>
+</head>
+<body>
+    <div class="buttoned">
+        <img id="upper" src="../images/img1.jpg" width="300" height="300">
+        <br>
+        <button onclick="previmage()">Previous</button>
+        <button onclick="nextimage()">Next</button>
+    </div>
+    <hr>
+    <div class="moused">
+        <img src="../images/img1.jpg" width="300" height="300"
+            onmouseover="src='../images/img2.jpg'"
+            onmouseout="src='../images/img1.jpg'"
+            onclick="src='../images/img3.jpg'">
+        <img id="lower" src="../images/img1.jpg" width="300" height="300">
+    </div>
+</body>
+</html>
